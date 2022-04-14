@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="../presentation/css/banque.css" />
+<head>
+  <title>Formulaire</title>
+</head>
+
+<body>
+  <header>
+    <h1  > Banque Lamhamdi</h1>
+   <br><br>
+</header>
+
+
+  <div>
+    <h1>virement</h1>
+    <form action="../metier/virement.php" method="POST">
+      
+      <label for="numero">numero: </label><input type="numero" name="numero"> <br><br>
+      <label for="valeur">valeur:</label><input type="valeur" name="valeur"> <br><br>
+      <button>inscrire</button>
+
+    </form>
+  </div>
+
+  <div>
+    <form action="../metier/existeClient.php" method="POST">
+
+      <h1>Existe Client </h1>
+      <label for="cin">cin:</label><input type="text" name="cin"> <br><br>
+      <button>inscrire</button>
+
+    </form>
+  </div>
+
+
+<div>
+  <h1>Nouveau Client </h1>
+  <form action="../metier/nouveauClient.php" method="POST">
+
+    <label for="nom">Nom :</label><input type="text" name="nom"> <br><br>
+    <label for="prenom"> Prenom :</label> <input type="text" name="prenom"><br><br>
+    <label for="address"> Adress : </label><input type="text" name="address"><br><br>
+    <label for="cin"> cin : </label><input type="text" name="cin"><br><br>
+    <label for="numero">Numero :</label><input type="text" name="numero"> <br><br>
+    <label for="montant"> Montant :</label> <input type="text" name="montant"><br><br>
+    <button>inscrire</button>
+
+  </form>
+</div>
+
+
+
+ <div>
+  <h1>Nouveau Compte </h1>
+  <form action="../metier/nouveauCompte.php" method="POST">
+
+    <label for="numero">Numero :</label><input type="text" name="numero"> <br><br>
+    <label for="montant"> Montant :</label> <input type="text" name="montant"><br><br>
+    <label for="cin"> cin : </label><input type="text" name="cin"><br><br>
+    <button class="button">inscrire</button>
+
+  </form>
+</div>
+
+<div>
+  <h1>Information sur le Compte </h1>
+  <form action="../metier/infos.php" method="POST">
+
+    <label for="cin"> cin : </label><input type="text" name="cin"><br><br>
+    <button>inscrire</button>
+
+  </form> 
+</div>
+
+<div>
+  <h1>Dedecter les personnes ayant le montant negative </h1>
+  <form action="../metier/debiteurs.php" method="POST">
+
+    <button>Rechercher</button>
+
+
+  </form>
+</div>
+
+<div>
+  <h1>Supprime le Compte </h1>
+  <form action="../metier/supprime.php" method="POST">
+
+    <label for="cin"> cin : </label><input type="text" name="cin"><br><br>
+    <button>inscrire</button>
+
+  </form> 
+</div>
+
+
+
+ 
+
+
+  <footer>
+       
+    <p>Merci pour ouvrire  votre compte chez  notre banque Lamhamdi</p>
+  
+  </footer>
+
+</body>
+
+
+
+
+
+
+</html>
